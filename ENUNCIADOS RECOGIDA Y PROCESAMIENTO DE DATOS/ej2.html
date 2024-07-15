@@ -1,0 +1,40 @@
+<!-- Escriba un formulario de recogida de datos personales que
+ Se solicitan el sexo.
+ Se muestra el sexo indicado por el usuario o se informa del
+error cometido. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>DATOS PERSONALES 3 (FORMULARIO)</h2>
+    <form action="ej2.php" method="post">
+        <p>Indique su sexo: </p>
+        <p>
+            <strong>Sexo: </strong>
+            <input type="radio" name="sexo" id="hombre" value="hombre"><label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer" value="mujer"><label for="mujer">Mujer</label>
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </p>
+    </form>
+</body>
+
+</html>
